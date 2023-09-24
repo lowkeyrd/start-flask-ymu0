@@ -2,7 +2,7 @@
 kind: Pipeline
 # 流水线执行名称，需要全局唯一。如果流水线模板存在，则不能成功提交流水线执行
 # 推荐使用commitID与时间戳构造唯一的名称
-name: "p-<% .git.shortCommitId %>-<% .currentTimestampMs %>"
+name: "p-<% .git.shortCommitId %>"
 # 一些任意的描述信息
 description: 'demo pipeline'
 # 添加任意的labels，用于查询过滤
