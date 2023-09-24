@@ -16,7 +16,7 @@ spec:
   # 本次执行使用的流水线模板
   # 可以选择已有的模板，也可以在配置文件中自定义
   # 这里的例子为引用下文
-  templateName: mytemplate-<% .git.branch %>
+  templateName: mytemplate
 
 ---
 
@@ -24,7 +24,7 @@ spec:
 kind: PipelineTemplate
 # 流水线模板名称，需要全局唯一，如果流水线模板存在，则会更新已有模板
 # 推荐使用Branch或MR关联的ID构造唯一的名称
-name: mytemplate-<% .git.branch %>
+name: mytemplate
 # 一些任意的描述信息
 description: 用于测试环境的流水线模板
 # 添加任意的labels，用于查询过滤
